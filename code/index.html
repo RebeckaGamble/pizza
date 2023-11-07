@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="greeting"></div>
+      <form id="orderForm">
+        <div id="box">
+          <label for="pizzaTypeInput">What pizza type do you want?</label>
+          <input
+            type="text"
+            id="pizzaTypeInput"
+            onkeydown="handleEnter(event, 'quantityInput')"
+          />
+          <div id="typeErr"></div>
+
+          <label for="quantityInput">How many?</label>
+          <input
+            type="number"
+            id="quantityInput"
+            min="1"
+            title="You need to order at least one pizza!"
+            onkeydown="handleEnter(event, 'placeOrderBtn')"
+          />
+          <div id="quantErr"></div>
+        </div>
+        <button type="submit" id="placeOrderBtn">Order</button>
+      </form>
+      <div id="yourOrder"></div>
+      <br />
+      <br />
+      <div id="box">
+        <button>
+          <a href="pizza.html">To pizzabot</a>
+        </button>
+      </div>
+    </div>
+    <script src="/code/pizza.js"></script>
+  </body>
+</html>

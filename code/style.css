@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/pepperoni.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+#greeting {
+  font-size: 20px;
+  padding: 24px 8px;
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+#greeting ul li {
+  list-style-type: none;
+}
+
+#box {
+  max-width: 300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#orderForm {
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: white;
+  color: #000;
+  border-radius: 5px;
+  padding: 44px 32px;
+  padding-bottom: 26px;
+}
+
+label {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 6px 10px;
+  font-size: larger;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-weight: 600;
+  background-color: black;
+  color: #fff;
+}
+
+button:hover {
+  background-color: rgb(71, 214, 71);
+  text-transform: uppercase;
+}
+
+#yourOrder {
+  display: none;
+  width: 360px;
+  margin: 10px auto;
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 5px;
+  line-height: 1.2;
+  border: 2px solid goldenrod;
+}
+#yourOrder.open {
+  display: flex;
+}
+
+#typeErr,
+#quantErr {
+  color: red;
+}
