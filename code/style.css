@@ -10,7 +10,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  background-image: url(/pepperoni.jpg);
+  background-image: url(../pepperoni.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
